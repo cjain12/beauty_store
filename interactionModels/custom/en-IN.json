@@ -1,0 +1,1004 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "online beauty store",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel",
+            "never mind",
+            "forget it"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "OrderSoap",
+          "slots": [
+            {
+              "name": "soapBrandName",
+              "type": "soapBrandName",
+              "samples": [
+                "{soapBrandName}",
+                "i want to order pears soap",
+                "lifeboy soap",
+                "pears soap",
+                "i want to order lifebuoy soap",
+                "lifebuoy"
+              ]
+            },
+            {
+              "name": "soapSize",
+              "type": "soapSize",
+              "samples": [
+                "{soapSize}",
+                "i need one hundred twenty five grams",
+                "i need fifty grams",
+                "I need hundred grams"
+              ]
+            },
+            {
+              "name": "soapQuantity",
+              "type": "quantity",
+              "samples": [
+                "{soapQuantity}",
+                "i want to order five quantities",
+                "i only want one soap bar",
+                "i want two soaps",
+                "i want to order three soaps",
+                "make an order for four bars"
+              ]
+            }
+          ],
+          "samples": [
+            "i need a soap",
+            "hey order soap",
+            "please order soap for me",
+            "please order soap ",
+            "want a soap",
+            "want soap",
+            "i want a soap",
+            "need soap",
+            "hi do you have a soap",
+            "order soap",
+            "I want to order soap",
+            "I need soap",
+            "Order soap for me",
+            "i want to order soap from jkt catalogue",
+            "soap"
+          ]
+        },
+        {
+          "name": "CatalogueIntent",
+          "slots": [],
+          "samples": [
+            "open beauty store",
+            "beauty store",
+            "open online beauty store",
+            "jkt e catalogue system"
+          ]
+        },
+        {
+          "name": "orderShampoo",
+          "slots": [
+            {
+              "name": "shampooBrand",
+              "type": "shampooBrandName",
+              "samples": [
+                "{shampooBrand}",
+                "order {shampooBrand} shampoo for me",
+                "{shampooBrand} shampoo"
+              ]
+            },
+            {
+              "name": "shampooSize",
+              "type": "shampooSize",
+              "samples": [
+                "{shampooSize}"
+              ]
+            },
+            {
+              "name": "shampooQuantity",
+              "type": "quantity",
+              "samples": [
+                "{shampooQuantity} ok",
+                "ok {shampooQuantity}",
+                "{shampooQuantity}",
+                "i want {shampooQuantity} bottles",
+                "i want {shampooQuantity} shampoo bottles"
+              ]
+            }
+          ],
+          "samples": [
+            "shampoo",
+            "could you order a shampoo for me",
+            "can i order a shampoo",
+            "do you have shampoo",
+            "want shampoo",
+            "order shampoo",
+            "please order shampoo",
+            "please order shampoo for me",
+            "hey order shampoo",
+            "i need a shampoo",
+            "I want to order shampoo",
+            "i want to order shampoo from jkt catalogue system",
+            "order shampoo for me",
+            "I need shampoo"
+          ]
+        },
+        {
+          "name": "infoDetails",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "my name is {name}",
+                "{name}"
+              ]
+            },
+            {
+              "name": "mobile",
+              "type": "AMAZON.PhoneNumber",
+              "samples": [
+                "ninin zero nine eight three five one one zero six",
+                "{mobile}"
+              ]
+            },
+            {
+              "name": "ContinueType",
+              "type": "ContinueType",
+              "samples": [
+                "{ContinueType}",
+                "wrong",
+                "right"
+              ]
+            }
+          ],
+          "samples": [
+            "ready",
+            "yes i am ready",
+            "yes i am ready to store information",
+            "yeah i am ready"
+          ]
+        },
+        {
+          "name": "noInfoDetails",
+          "slots": [],
+          "samples": [
+            "wrong"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "no thanks",
+            "not ready",
+            "done",
+            "no"
+          ]
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": [
+            "okay",
+            "right",
+            "resume",
+            "continue",
+            "keep going"
+          ]
+        },
+        {
+          "name": "CheckoutIntent",
+          "slots": [],
+          "samples": [
+            "checkout"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "3",
+              "name": {
+                "value": "125g",
+                "synonyms": [
+                  "125 g",
+                  "one hundred twenty five grams",
+                  "125 gm",
+                  "125 grams",
+                  "125gm",
+                  "125"
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "100g",
+                "synonyms": [
+                  "one hundred grams",
+                  "100 grams",
+                  "100g",
+                  "100 gm",
+                  "100gm",
+                  "100"
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "50g",
+                "synonyms": [
+                  "fifty grams",
+                  "50 grams",
+                  "50gm",
+                  "50 gm",
+                  "50 g",
+                  "50"
+                ]
+              }
+            }
+          ],
+          "name": "soapSize"
+        },
+        {
+          "values": [
+            {
+              "id": "5",
+              "name": {
+                "value": "5",
+                "synonyms": [
+                  "five"
+                ]
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "4",
+                "synonyms": [
+                  "four"
+                ]
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "3",
+                "synonyms": [
+                  "three"
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "2",
+                "synonyms": [
+                  "two"
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "1",
+                "synonyms": [
+                  "one"
+                ]
+              }
+            }
+          ],
+          "name": "quantity"
+        },
+        {
+          "values": [
+            {
+              "id": "2",
+              "name": {
+                "value": "sunsilk",
+                "synonyms": [
+                  "sunsilk shampoo",
+                  "sunsilk"
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "dove",
+                "synonyms": [
+                  "dove shampoo",
+                  "dove"
+                ]
+              }
+            }
+          ],
+          "name": "shampooBrandName"
+        },
+        {
+          "values": [
+            {
+              "id": "3",
+              "name": {
+                "value": "500 ml",
+                "synonyms": [
+                  "500ml",
+                  "500"
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "360 ml",
+                "synonyms": [
+                  "360ml",
+                  "360"
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "180 ml",
+                "synonyms": [
+                  "180ml",
+                  "180"
+                ]
+              }
+            }
+          ],
+          "name": "shampooSize"
+        },
+        {
+          "values": [
+            {
+              "id": "2",
+              "name": {
+                "value": "pears",
+                "synonyms": [
+                  "pears",
+                  "pears soap",
+                  "pear"
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "lifebuoy",
+                "synonyms": [
+                  "lifebuoy soap",
+                  "lifebuoy"
+                ]
+              }
+            }
+          ],
+          "name": "soapBrandName"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "shampoo"
+              }
+            },
+            {
+              "name": {
+                "value": "soap"
+              }
+            }
+          ],
+          "name": "soap_shampoo"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "continue"
+              }
+            }
+          ],
+          "name": "ContinueType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "no",
+                "synonyms": [
+                  "no thanks",
+                  "not ready"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Ready",
+                "synonyms": [
+                  "ready"
+                ]
+              }
+            }
+          ],
+          "name": "ReadyType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "welcome"
+              }
+            }
+          ],
+          "name": "welcome"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "OrderSoap",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.1129506511567"
+          },
+          "slots": [
+            {
+              "name": "soapBrandName",
+              "type": "soapBrandName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.889150459884.1325438443336"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.889150459884.1325438443336.112065023020"
+                }
+              ]
+            },
+            {
+              "name": "soapSize",
+              "type": "soapSize",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.889150459884.166485206975"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.889150459884.166485206975.869174880473"
+                }
+              ]
+            },
+            {
+              "name": "soapQuantity",
+              "type": "quantity",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.889150459884.601584049511"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1605275348354.59631740020.1273796790037"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "orderShampoo",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.525502622404"
+          },
+          "slots": [
+            {
+              "name": "shampooBrand",
+              "type": "shampooBrandName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.383147568420.1015169906609"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1493956755190.1575477019466.1009724867494"
+                }
+              ]
+            },
+            {
+              "name": "shampooSize",
+              "type": "shampooSize",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.383147568420.1109956213150"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.383147568420.1109956213150.602974852323"
+                }
+              ]
+            },
+            {
+              "name": "shampooQuantity",
+              "type": "quantity",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.383147568420.208072935719"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1614192824014.1265859341893.824008532753"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "infoDetails",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.124843378103.249934178565"
+              }
+            },
+            {
+              "name": "mobile",
+              "type": "AMAZON.PhoneNumber",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.411884743964.1064305095466"
+              }
+            },
+            {
+              "name": "ContinueType",
+              "type": "ContinueType",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1309828819983.1327116037583"
+              }
+            }
+          ]
+        },
+        {
+          "name": "CatalogueIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.249792329894"
+          },
+          "slots": []
+        },
+        {
+          "name": "noInfoDetails",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.918213450875"
+          },
+          "slots": []
+        },
+        {
+          "name": "CheckoutIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": []
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.889150459884.1325438443336",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select brand name from pears and lifebuoy"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.889150459884.1325438443336.112065023020",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select a valid brand name"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.889150459884.166485206975",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What size do you need from fifty grams, hundred grams and one hundred twenty five grams?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.889150459884.166485206975.869174880473",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select valid size."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.889150459884.601584049511",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "How much quantities you want to purchase. Note that you can order maximum five quantities."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.383147568420.1015169906609",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select brand name from dove and sunsilk"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.383147568420.1109956213150",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What size do you need from one hundred eighty ml, three hundred sixty ml and five hundred ml."
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.383147568420.1109956213150.602974852323",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select valid shampoo size."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.383147568420.208072935719",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "How many quantities you want to purchase. Note that you can order maximum five quantities."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.128384903057.1334457007240",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What is your name?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.411884743964.1064305095466",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What is your mobile number?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1605275348354.59631740020.1273796790037",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify the quantity of soap you want to buy."
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1614192824014.1265859341893.824008532753",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify the quantity of shampoo you want to buy."
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1575070447391",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select from the list - soap or shampoo"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.908433667439",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Welcome to JKT e catalogue system. I need to capture some basic details. Are you ready?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.770231671733",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Thank you for sharing details. Please select from list - soap or shampoo"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1611092089135",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Item has been successfully added in the cart. Please visit website to place an order. Do you want to continue shopping?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.700003847925",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select from the list -soap or shampoo "
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1493956755190.1575477019466.1009724867494",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select a valid brand name."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.124843378103.249934178565",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What is your name."
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.505951016249",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Welcome to JKT e catalogue system. I need to capture some basic details. Are you ready?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.471813002776",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Welcome to JKT e catalogue system. Please select from the list- soap or shampoo?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1293414935053",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Item has been successfully added in the cart. Please visit website to place an order. Do you want to continue shopping?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1170926996439",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select from list- soap or shampo?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1278989617207",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "hj"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1220164723472",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "sdsds"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.525502622404",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Items you have chosen {shampooQuantity} of {shampooBrand} {shampooSize} have been successfully added in the cart. Please say Continue, if you want to continue with shopping  or  Checkout, if done with shopping ?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.988572973333",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select from the list- Soap or Shampoo ?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.183835062801",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Thank you for using Beauty Store, Have a nice day."
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1453082837820",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "asda"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.968073290633",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please select from soap or shampoo ?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.918213450875",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please say ready to enter your details else say cancel ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1364887146525.133842036953",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Hi {name} , your mobile number is {mobile} , is this right or wrong?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1364887146525.133842036953",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "please select from soap or shampoo ?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.95035673518",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What can i do for you ?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.420366886225",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Hi {name} , your mobile number is {mobile} , right?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.249792329894",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Welcome to JKT e catalogue system. I need to capture some basic details. Please say ready if you are okay else say cancel ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.223110084881.920860516744",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please say ready to re-enter your details else no ?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1534621658431",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Hi {name} , your mobile number is {mobile} , is this right or wrong?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1309828819983.1327116037583",
+        "variations": [
+          {
+            "type": "SSML",
+            "value": "\u003cspeak\u003eHi {name} , your mobile number is \u003csay-as interpret-as\u003d\"digits\"\u003e{mobile} \u003c/say-as\u003e  , is this right or wrong ?\u003c/speak\u003e"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1129506511567",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Items you have chosen {soapQuantity} of {soapBrandName} {soapSize} have been successfully added in the cart. Please say Continue if you want to continue with shopping or Checkout if done with shopping ?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "9"
+}
